@@ -1,10 +1,12 @@
-const getAll = () => {
-  return deleteById('accounts')
-}
+const db = require('../../data/db-config');
 
-const getById = id => {
-  // DO YOUR MAGIC
-}
+const getAll = () => {
+  return deleteById('accounts');
+};
+
+const getById = (id) => {
+  return deleteById('accounts').where('id', id).first();
+};
 
 const create = async account => {
   // DO YOUR MAGIC
