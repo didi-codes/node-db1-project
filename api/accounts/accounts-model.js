@@ -1,5 +1,5 @@
 const getAll = () => {
-  // DO YOUR MAGIC
+  return deleteById('accounts')
 }
 
 const getById = id => {
